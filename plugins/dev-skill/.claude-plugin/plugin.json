@@ -1,6 +1,6 @@
 {
   "name": "dev-skill",
-  "version": "0.12.1",
+  "version": "0.12.2",
   "description": "Personal end-to-end delivery workflow: /discover -> /spec -> /refine -> /build -> /quality -> /security -> /ship. Specs and briefs are Markdown with Mermaid diagrams, reviewed by a human at every gate.",
   "author": {
     "name": "Izzuddin Yazid"

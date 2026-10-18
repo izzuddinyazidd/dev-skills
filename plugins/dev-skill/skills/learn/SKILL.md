@@ -8,7 +8,7 @@ description: >
   thing, or a project-specific pattern is discovered. Also invoked by the
   build/quality/security/ship skills at the end of their runs, and explicitly
   via /learn ("remember that...", "capture this", "/learn audit",
-  "/learn remove <slug>"). Lessons live in the target repo at
+  "/learn remove SLUG"). Lessons live in the target repo at
   docs/learnings/ and are auto-loaded into every session by this plugin's
   SessionStart hook.
 ---
@@ -54,7 +54,7 @@ bodies in it.
   commit chunk.
 - **update** — refine an existing lesson in place.
 - **audit** (`/learn audit`) — list all lessons with dates. No writes.
-- **remove** (`/learn remove <slug>`) — delete the file and its INDEX line.
+- **remove** (`/learn remove SLUG`) — delete the file and its INDEX line.
 
 ## What makes a lesson worth capturing
 

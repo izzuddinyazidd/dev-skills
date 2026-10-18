@@ -1,5 +1,6 @@
 {
   "name": "dev-skill-mp",
+  "description": "Development workflow skills: discover, spec, refine, build, quality, security, ship.",
   "owner": {
     "name": "Izzuddin Yazid",
     "email": "izzyaz252@gmail.com"
@@ -9,7 +10,7 @@
       "name": "dev-skill",
       "source": "./plugins/dev-skill",
       "description": "End-to-end delivery workflow: discover, spec, refine, build, quality, security, ship.",
-      "version": "0.12.1",
+      "version": "0.12.2",
       "author": {
         "name": "Izzuddin Yazid"
       }
