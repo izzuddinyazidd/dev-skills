@@ -1,0 +1,13 @@
+{
+  "name": "dev-skill-mp",
+  "owner": { "name": "Izzuddin Yazid", "email": "izzyaz252@gmail.com" },
+  "plugins": [
+    {
+      "name": "dev-skill",
+      "source": "./plugins/dev-skill",
+      "description": "End-to-end delivery workflow: discover, spec, refine, build, quality, security, ship.",
+      "version": "0.12.0",
+      "author": { "name": "Dzafran Bustaman" }
+    }
+  ]
+}
