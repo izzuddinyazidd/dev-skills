@@ -26,6 +26,7 @@ essays.
    | Refined   | your review, then `/build`                       |
    | Built     | `/quality`, then `/security`, then `/ship`       |
    | Shipped   | done — `/discover` or `/spec` starts the next iteration |
+   | Parked    | paused on purpose — resume by setting Status back to the stage it was at |
 
    Cross-check `Built` against reality: if the branch for it doesn't exist
    or tests were never run, say so instead of trusting the label.

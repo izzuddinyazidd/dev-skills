@@ -15,11 +15,12 @@ problems=""
 specs="$dir/docs/specs"
 if [ -d "$specs" ]; then
   while IFS= read -r md; do
+    [ "$(basename "$md")" = README.md ] && continue
     status=$(grep -oE '\*\*Status:\*\*[[:space:]]*[A-Za-z-]+' "$md" | head -1 | awk '{print $2}')
     case "${status:-missing}" in
-      Draft|Refined|Built|Shipped) ;;
+      Draft|Refined|Built|Shipped|Parked) ;;
       *) problems="$problems
-- $md has Status '${status:-missing}' — must be Draft, Refined, Built, or Shipped." ;;
+- $md has Status '${status:-missing}' — must be Draft, Refined, Built, Shipped, or Parked." ;;
     esac
     if basename "$md" .md | grep -qE -- '-v[0-9]+$'; then
       problems="$problems
