@@ -6,11 +6,11 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/block-dangerous.sh"
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/block-dangerous.sh\""
           },
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/secret-scan.sh"
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/secret-scan.sh\""
           }
         ]
       }
@@ -21,7 +21,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/auto-format.sh"
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/auto-format.sh\""
           }
         ]
       }
@@ -31,7 +31,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/verify-gates.sh"
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/verify-gates.sh\""
           }
         ]
       }
@@ -41,11 +41,11 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/route-to-dev-skill.sh"
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/route-to-dev-skill.sh\""
           },
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/load-learnings.sh"
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/load-learnings.sh\""
           }
         ]
       }
