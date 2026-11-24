@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # PreToolUse[Bash] hook: block destructive git/file commands.
 set -uo pipefail
+allow() { echo "{}"; exit 0; }  # explicit no-opinion result: defer to normal permission flow
 
-cmd=$(python3 -c 'import json,sys; print(json.load(sys.stdin).get("tool_input",{}).get("command",""))' 2>/dev/null) || exit 0
-[ -z "$cmd" ] && exit 0
+cmd=$(python3 -c 'import json,sys; print(json.load(sys.stdin).get("tool_input",{}).get("command",""))' 2>/dev/null) || allow
+[ -z "$cmd" ] && allow
 
 deny() { echo "$1" >&2; exit 2; }
 
@@ -22,4 +23,4 @@ if printf '%s' "$cmd" | grep -qE '(^|[;&|[:space:]])git commit'; then
   esac
 fi
 
-exit 0
+allow
